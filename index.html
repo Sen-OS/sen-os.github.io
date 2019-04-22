@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.10"></script>
+		<script src="assets/js/index.js"></script>
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="shortcut icon" type="image/png" href="assets/images/pfp.png">
+		<title>Sen's Designs</title>
+		<style>
+			@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+			@keyframes fade {
+				100% {opacity: 1;}
+			}
+
+			body {
+				font-family: "Nunito", sans-serif;
+			}
+
+			.heading {
+				position: relative;
+				overflow: hidden;
+				
+				
+			}
+
+			.heading:before {
+				content: "";
+				background-image: url("assets/images/bg_top.png");
+				background-attachment: fixed;
+				background-size: cover;
+				background-position: center center;
+				opacity: 0.5;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				position: absolute;
+				z-index: -1;
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				margin: 0px;
+			}
+
+			.full-page {
+				min-height: 100vh;
+			}
+
+			.text-dark {
+				color: #000000 !important;
+			}
+
+			.typed-cursor {
+				font-size: 3.29rem;
+			}
+
+			.display-5 {
+				font-size: 3.29rem;
+			}
+
+			.display-6 {
+				font-size: 1.5rem;
+			}
+
+			.bg-dark {
+				background-color: #252525 !important;
+			}
+
+			.img-container {
+				position: relative;
+			}
+
+			.btn-dark {
+				background-color: #363636 !important;
+			}
+
+			.img {
+				border: 3px solid #363636;
+				opacity: 1;
+				display: block;
+				width: 100%;
+				height: auto;
+				transition: .15s ease;
+				backface-visibility: hidden;
+			}
+
+			.img-middle {
+				transition: .15s ease;
+				opacity: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				text-align: center;
+			}
+
+			.img-container:hover .img {
+				filter: blur(5px);
+				opacity: 0.3;
+			}
+
+			.img-container:hover .img-middle {
+				opacity: 1;
+			}
+
+			.footer {
+				background-color: #1f1f1f;
+			}
+
+			#scroll {
+				transition: 0.15s ease;
+			}
+		</style>
+    </head>
+    <body class="bg-dark text-light">
+		<div class="full-page heading d-flex flex-column justify-content-center align-items-center justify-content-center">
+			<div class="container text-center">
+				<span class="display-5 font-weight-bold cover-typed-margin" id="coverTyped"></span>
+				<span class="display-5 font-weight-bold cover-typed-margin" id="coverTypedSwitch" style="display: none;">Hello, my name is Sen (or OverlordSnail) and I edit various images into various things using Adobe Photoshop CS6.</span><br>
+				<div class="mb-1" id="spacer" style="display: none;"></div>
+				<span class="display-6" id="subtext" style="opacity: 0; display: none; animation: fade 0.3s forwards;">I've been editing pictures into things like backgrounds that I use for myself for quite some time, but I thought I'd  make some place to publish them since I find myself doing this much more often and some other folk might find them nice.  If you'd like, you can message me on Discord @ Sen#0756 and I'd be glad to make you just about anything; so long as it doesn't need drawing. No, I don't take payment.</span>
+			</div>
+			<img src="assets/images/caret-down-solid.svg" id="scroll" class="position-absolute" style="opacity: 0; bottom: 16px; border: none;" width="48px" height="48px">
+		</div>
+		<div class="container d-flex flex-column align-items-center">
+			<span class="display-6 mt-3 mb-3 d-inline-block">- The following pictures are some backgrounds I've made that are my personal favorites -</span>
+			<div>
+				<div class="img-container">
+					<img src="assets/images/far_cry_4.png" class="img img-fluid mb-3">
+					<div class="img-middle">
+						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/far_cry_4.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+						Download
+					</div>
+				</div>
+				<div class="img-container">
+					<img src="assets/images/far_cry_4_experimental.png" class="img img-fluid mb-3">
+					<div class="img-middle">
+						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/far_cry_4_experimental.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+						Download
+					</div>
+				</div>
+				<div class="img-container">
+					<img src="assets/images/deafening_silence.png" class="img img-fluid mb-3">
+					<div class="img-middle">
+						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/deafening_silence.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+						Download
+					</div>
+				</div>
+				<div class="img-container">
+					<img src="assets/images/mab.png" class="img img-fluid mb-3">
+					<div class="img-middle">
+						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/mab.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+						Download
+					</div>
+				</div>
+				<div class="img-container">
+					<img src="assets/images/judgement_day.png" class="img img-fluid mb-3">
+					<div class="img-middle">
+						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/judgement_day.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+						Download
+					</div>
+				</div>
+				<div class="img-container">
+					<img src="assets/images/droeloe_fts.png" class="img img-fluid mb-3">
+					<div class="img-middle">
+						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/droeloe_fts.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+						Download
+					</div>
+				</div>
+				<div class="img-container">
+					<img src="assets/images/droeloe_kintsugi.png" class="img img-fluid mb-3">
+					<div class="img-middle">
+						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/droeloe_kintsugi.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+						Download
+					</div>
+				</div>
+				<div class="img-container">
+					<img src="assets/images/only_be_me.png" class="img img-fluid mb-3">
+					<div class="img-middle">
+						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/only_be_me.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+						Download
+					</div>
+				</div>
+				<div class="img-container">
+					<img src="assets/images/chasing_light.png" class="img img-fluid mb-3">
+					<div class="img-middle">
+						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/chasing_light.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+						Download
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer d-flex flex-column justify-content-center align-items-center pb-5 pt-5">
+			<span>This website uses icons from <a href="https://fontawesome.com" class="text-reset">FontAwesome</a>.</span>
+			<span>Website created by cylex#2831.</span>
+		</div>
+    </body>
+</html>
