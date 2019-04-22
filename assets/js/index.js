@@ -10,6 +10,7 @@ $(document).ready(function() {
 			$(".typed-cursor").hide();
 			$("#coverTypedSwitch").show();
 			$("#subtext").show();
+			$("#payment-disclaimer").show();
 			$("#spacer").show();
 			$("#scroll").css("opacity", "1");
 		}
