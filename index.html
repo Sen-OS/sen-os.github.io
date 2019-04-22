@@ -15,6 +15,12 @@
 		<style>
 			@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
+			@media only screen and (max-width: 768px) {
+				.heading:before {
+					background-image: url("assets/images/bg_top.png") !important;
+				}
+			}
+
 			@keyframes fade {
 				100% {opacity: 1;}
 			}
@@ -26,13 +32,11 @@
 			.heading {
 				position: relative;
 				overflow: hidden;
-				
-				
 			}
 
 			.heading:before {
 				content: "";
-				background-image: url("assets/images/bg_top.png");
+				background-image: url("assets/images/bg.png");
 				background-attachment: fixed;
 				background-size: cover;
 				background-position: center center;
@@ -130,77 +134,79 @@
 			</div>
 			<img src="assets/images/caret-down-solid.svg" id="scroll" class="position-absolute" style="opacity: 0; bottom: 16px; border: none;" width="48px" height="48px">
 		</div>
-		<div class="container d-flex flex-column align-items-center">
-			<span class="display-6 mt-3 mb-3 d-inline-block">- The following pictures are some backgrounds I've made that are my personal favorites -</span>
-			<div>
-				<div class="img-container">
-					<img src="assets/images/far_cry_4.png" class="img img-fluid mb-3">
-					<div class="img-middle">
-						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/far_cry_4.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
-						Download
+		<div class="d-flex flex-column align-items-center">
+			<div class="container">
+				<span class="display-6 mt-3 mb-3 d-inline-block">- The following pictures are some backgrounds I've made that are my personal favorites -</span>
+				<div>
+					<div class="img-container">
+						<img src="assets/images/far_cry_4.png" class="img img-fluid mb-3">
+						<div class="img-middle">
+							<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/far_cry_4.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+							Download
+						</div>
 					</div>
-				</div>
-				<div class="img-container">
-					<img src="assets/images/far_cry_4_experimental.png" class="img img-fluid mb-3">
-					<div class="img-middle">
-						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/far_cry_4_experimental.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
-						Download
+					<div class="img-container">
+						<img src="assets/images/far_cry_4_experimental.png" class="img img-fluid mb-3">
+						<div class="img-middle">
+							<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/far_cry_4_experimental.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+							Download
+						</div>
 					</div>
-				</div>
-				<div class="img-container">
-					<img src="assets/images/deafening_silence.png" class="img img-fluid mb-3">
-					<div class="img-middle">
-						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/deafening_silence.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
-						Download
+					<div class="img-container">
+						<img src="assets/images/deafening_silence.png" class="img img-fluid mb-3">
+						<div class="img-middle">
+							<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/deafening_silence.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+							Download
+						</div>
 					</div>
-				</div>
-				<div class="img-container">
-					<img src="assets/images/mab.png" class="img img-fluid mb-3">
-					<div class="img-middle">
-						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/mab.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
-						Download
+					<div class="img-container">
+						<img src="assets/images/mab.png" class="img img-fluid mb-3">
+						<div class="img-middle">
+							<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/mab.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+							Download
+						</div>
 					</div>
-				</div>
-				<div class="img-container">
-					<img src="assets/images/judgement_day.png" class="img img-fluid mb-3">
-					<div class="img-middle">
-						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/judgement_day.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
-						Download
+					<div class="img-container">
+						<img src="assets/images/judgement_day.png" class="img img-fluid mb-3">
+						<div class="img-middle">
+							<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/judgement_day.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+							Download
+						</div>
 					</div>
-				</div>
-				<div class="img-container">
-					<img src="assets/images/droeloe_fts.png" class="img img-fluid mb-3">
-					<div class="img-middle">
-						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/droeloe_fts.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
-						Download
+					<div class="img-container">
+						<img src="assets/images/droeloe_fts.png" class="img img-fluid mb-3">
+						<div class="img-middle">
+							<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/droeloe_fts.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+							Download
+						</div>
 					</div>
-				</div>
-				<div class="img-container">
-					<img src="assets/images/droeloe_kintsugi.png" class="img img-fluid mb-3">
-					<div class="img-middle">
-						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/droeloe_kintsugi.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
-						Download
+					<div class="img-container">
+						<img src="assets/images/droeloe_kintsugi.png" class="img img-fluid mb-3">
+						<div class="img-middle">
+							<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/droeloe_kintsugi.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+							Download
+						</div>
 					</div>
-				</div>
-				<div class="img-container">
-					<img src="assets/images/only_be_me.png" class="img img-fluid mb-3">
-					<div class="img-middle">
-						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/only_be_me.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
-						Download
+					<div class="img-container">
+						<img src="assets/images/only_be_me.png" class="img img-fluid mb-3">
+						<div class="img-middle">
+							<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/only_be_me.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+							Download
+						</div>
 					</div>
-				</div>
-				<div class="img-container">
-					<img src="assets/images/chasing_light.png" class="img img-fluid mb-3">
-					<div class="img-middle">
-						<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/chasing_light.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
-						Download
+					<div class="img-container">
+						<img src="assets/images/chasing_light.png" class="img img-fluid mb-3">
+						<div class="img-middle">
+							<button type="submit" class="btn btn-dark" onclick="window.open('assets/images/chasing_light.png');"><img src="assets/images/download-solid.svg" class="mr-2" width="16px" height="16px">
+							Download
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="footer d-flex flex-column justify-content-center align-items-center pb-5 pt-5">
 			<span>This website uses icons from <a href="https://fontawesome.com" class="text-reset">FontAwesome</a>.</span>
-			<span>Website created by cylex#2831.</span>
+			<span>Website coded by cylex#2831.</span>
 		</div>
     </body>
 </html>
